@@ -1,0 +1,50 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <h3 style="text-align: right;"> Meryem Boubakri</h3>
+    <script>
+        let etudiant1 = {
+            Nom: "El Kassimi",
+            Prenom: "Sara",
+            CIN: "1234"
+
+        }
+        let etudiant2 = {
+            Nom: "El Fid",
+            Prenom: "Nouhaila",
+            CIN: "AE303279"
+
+        }
+        let etudiant3 = {
+            Nom: "El Adnani ",
+            Prenom: "Inssaf",
+            CIN: "12345"
+
+        }
+        let etudiant4 = {
+            Nom: " dakli ",
+            Prenom: "Fatima ezzahra",
+            CIN: "123456"
+
+        }
+        afficheretudiant(etudiant1);
+        afficheretudiant(etudiant2);
+        afficheretudiant(etudiant3);
+        afficheretudiant(etudiant4);
+
+        function afficheretudiant(etudiant) {
+            document.write(etudiant.Nom + " " + etudiant.Prenom + " " + etudiant.CIN + "   ");
+            var element = document.createElement("button");
+            var buttonText = document.createTextNode("Details1");
+            var br = document.createElement("br");
+            document.body.appendChild(element);
+            document.body.appendChild(br);
+            element.appendChild(buttonText);
+            var buttonText = document.createTextNode("Details");
+        }
+    </script>
+</body>
